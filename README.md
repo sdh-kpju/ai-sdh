@@ -1,19 +1,26 @@
-# 🎈 Blank app template
+# 🩺 Healthcare Quiz App
 
-A simple Streamlit app template for you to modify!
+An interactive multiple-choice **quiz app for healthcare topics**, built with [Streamlit](https://streamlit.io/).  
+This app allows users to test their knowledge, get instant feedback, and download results as CSV.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+---
 
-### How to run it on your own machine
+## 🚀 Features
+- 🎯 Multiple-choice quiz (customisable number of questions)
+- 🔀 Shuffle or fixed order questions
+- ✅ Instant feedback with explanations
+- 📊 Final score summary and review table
+- 💾 Download quiz results (CSV)
+- 🔄 Restart and retake quiz
 
-1. Install the requirements
+---
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## 🛠️ Tech Stack
+- [Python 3](https://www.python.org/)  
+- [Streamlit](https://streamlit.io/)  
+- [Pandas](https://pandas.pydata.org/)  
 
-2. Run the app
+---
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## 📂 Repository Structure
+
