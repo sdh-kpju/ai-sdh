@@ -111,7 +111,7 @@ if not st.session_state.started:
         st.session_state.answers = []
         st.session_state.submitted = False
         st.session_state.started = True
-        st.experimental_rerun()
+        st.rerun()
 
 # -----------------------------
 # Quiz UI
@@ -149,7 +149,7 @@ if st.session_state.started:
                     "Explanation": q.get('explanation', '')
                 })
                 st.session_state.submitted = True
-                st.experimental_rerun()
+                st.rerun()
     else:
         # Feedback + explanation
         last = st.session_state.answers[-1]
@@ -163,7 +163,7 @@ if st.session_state.started:
             if st.button("Next Question"):
                 st.session_state.idx += 1
                 st.session_state.submitted = False
-                st.experimental_rerun()
+                st.rerun()
         else:
             st.success("🎉 You've reached the end of the quiz.")
             st.write(f"**Final score: {st.session_state.score} / {total_q}**")
@@ -197,4 +197,4 @@ if st.session_state.started:
                 for k in list(st.session_state.keys()):
                     if str(k).startswith("choice_"):
                         del st.session_state[k]
-                st.experimental_rerun()
+                st.rerun()
